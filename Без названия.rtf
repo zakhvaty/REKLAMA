@@ -1,0 +1,158 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 <!DOCTYPE html>\
+<html lang="ru">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>ZAKHVATY AD 16:9 - Perfect Fit</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">\
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    fontFamily: \{\
+                        heading: ['Oswald', 'sans-serif'],\
+                        sans: ['Montserrat', 'sans-serif'],\
+                    \},\
+                    colors: \{\
+                        'brand-bg': '#FFFFFF',\
+                        'brand-surface': '#F3F5F7',\
+                        'brand-accent': '#2BADE7',\
+                        'brand-accent-hover': '#259ACD',\
+                        'brand-dark': '#111827',\
+                        'brand-gray': '#9CA3AF',\
+                    \},\
+                    boxShadow: \{\
+                        'glow': '0 0 40px rgba(43, 173, 231, 0.4)',\
+                        'card': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',\
+                    \}\
+                \}\
+            \}\
+        \}\
+    </script>\
+    <style>\
+        /* \uc0\u1062 \u1077 \u1085 \u1090 \u1088 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077  \u1080  \u1092 \u1080 \u1082 \u1089 \u1072 \u1094 \u1080 \u1103  \u1087 \u1088 \u1086 \u1087 \u1086 \u1088 \u1094 \u1080 \u1081  */\
+        body \{\
+            background-color: #000;\
+            display: flex;\
+            justify-content: center;\
+            align-items: center;\
+            height: 100vh;\
+            margin: 0;\
+            overflow: hidden;\
+        \}\
+\
+        .ad-container \{\
+            width: 90vw; /* \uc0\u1047 \u1072 \u1085 \u1080 \u1084 \u1072 \u1077 \u1090  90% \u1096 \u1080 \u1088 \u1080 \u1085 \u1099  \u1086 \u1082 \u1085 \u1072  */\
+            max-width: 1600px;\
+            aspect-ratio: 16 / 9; /* \uc0\u1046 \u1077 \u1089 \u1090 \u1082 \u1072 \u1103  \u1087 \u1088 \u1086 \u1087 \u1086 \u1088 \u1094 \u1080 \u1103  16:9 */\
+            position: relative;\
+            background-color: #111827; /* brand-dark */\
+            overflow: hidden;\
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);\
+            display: flex;\
+            border: 1px solid #374151;\
+        \}\
+\
+        /* \uc0\u1043 \u1088 \u1072 \u1076 \u1080 \u1077 \u1085 \u1090 \u1085 \u1099 \u1081  \u1090 \u1077 \u1082 \u1089 \u1090  */\
+        .neon-gradient-text \{\
+            background-image: linear-gradient(to right, #2BADE7, #60A5FA);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+\
+        /* \uc0\u1040 \u1085 \u1080 \u1084 \u1072 \u1094 \u1080 \u1103  \u1087 \u1091 \u1083 \u1100 \u1089 \u1072 \u1094 \u1080 \u1080  \u1076 \u1083 \u1103  \u1082 \u1085 \u1086 \u1087 \u1082 \u1080  */\
+        @keyframes pulse-glow \{\
+            0%, 100% \{ box-shadow: 0 0 20px rgba(43, 173, 231, 0.3); transform: scale(1); \}\
+            50% \{ box-shadow: 0 0 40px rgba(43, 173, 231, 0.6); transform: scale(1.02); \}\
+        \}\
+        .animate-btn \{\
+            animation: pulse-glow 3s infinite ease-in-out;\
+        \}\
+\
+        /* \uc0\u1044 \u1077 \u1082 \u1086 \u1088 \u1072 \u1090 \u1080 \u1074 \u1085 \u1099 \u1081  \u1092 \u1086 \u1085  */\
+        .bg-grid \{\
+            background-size: 40px 40px;\
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),\
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);\
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <div class="ad-container rounded-3xl">\
+        <div class="absolute inset-0 bg-grid pointer-events-none"></div>\
+        <div class="absolute top-[-20%] right-[-10%] w-[50%] h-[80%] bg-brand-accent/20 rounded-full blur-[100px] pointer-events-none"></div>\
+        \
+        <div class="absolute top-10 left-12 z-20">\
+            <span class="font-black text-3xl tracking-tighter text-white font-heading uppercase">\uc0\u1047 \u1072 \u1093 \u1074 \u1072 \u1090 \u1080 <span class="text-brand-accent">.</span></span>\
+        </div>\
+\
+        <div class="w-full h-full grid grid-cols-2 p-12 items-center relative z-10">\
+            \
+            <div class="pl-4 flex flex-col justify-center h-full space-y-8">\
+                <div>\
+                    <div class="inline-block px-4 py-2 border border-brand-accent/30 rounded-full mb-6 bg-brand-accent/10 backdrop-blur-md">\
+                        <p class="text-sm font-bold uppercase text-brand-accent tracking-[0.2em]">\uc0\u1055 \u1072 \u1088 \u1090 \u1085 \u1077 \u1088 \u1089 \u1082 \u1072 \u1103  \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1072 </p>\
+                    </div>\
+                    \
+                    <h1 class="text-7xl font-bold leading-[0.9] tracking-tighter uppercase font-heading text-white">\
+                        \uc0\u1044 \u1074 \u1080 \u1078 \u1077 \u1085 \u1080 \u1077  \'97 <br>\
+                        <span class="neon-gradient-text">\uc0\u1101 \u1090 \u1086  \u1055 \u1088 \u1080 \u1073 \u1099 \u1083 \u1100 .</span>\
+                    </h1>\
+                </div>\
+\
+                <p class="text-xl text-gray-400 font-medium max-w-lg leading-relaxed border-l-4 border-brand-accent pl-6">\
+                    \uc0\u1057 \u1090 \u1072 \u1085 \u1100 \u1090 \u1077  \u1094 \u1080 \u1092 \u1088 \u1086 \u1074 \u1099 \u1084  \u1074 \u1083 \u1072 \u1076 \u1077 \u1083 \u1100 \u1094 \u1077 \u1084  \u1089 \u1074 \u1086 \u1077 \u1075 \u1086  \u1075 \u1086 \u1088 \u1086 \u1076 \u1072 . \u1055 \u1077 \u1088 \u1074 \u1072 \u1103  \u1095 \u1077 \u1089 \u1090 \u1085 \u1072 \u1103  <span class="text-white font-bold">P2P-\u1073 \u1080 \u1088 \u1078 \u1072 </span> \u1083 \u1086 \u1075 \u1080 \u1089 \u1090 \u1080 \u1082 \u1080 .\
+                </p>\
+\
+                <div class="pt-4">\
+                    <div class="animate-btn inline-flex items-center justify-center bg-brand-accent text-white px-12 py-5 rounded-full font-bold text-2xl uppercase tracking-wider cursor-pointer">\
+                        \uc0\u1047 \u1072 \u1093 \u1074 \u1072 \u1090 \u1080  \u1088 \u1077 \u1075 \u1080 \u1086 \u1085 \
+                    </div>\
+                    <p class="mt-4 text-sm text-gray-500 font-mono">/// LIMITED_ACCESS_V2.0</p>\
+                </div>\
+            </div>\
+\
+            <div class="flex justify-center items-center relative">\
+                \
+                <div class="absolute w-[450px] h-[450px] border border-white/5 rounded-full animate-[spin_10s_linear_infinite]"></div>\
+                <div class="absolute w-[600px] h-[600px] border border-white/5 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>\
+\
+                <div class="relative z-10 bg-brand-dark p-3 rounded-[3.5rem] shadow-2xl w-[330px] rotate-[-3deg] transition-transform duration-500 hover:rotate-0 border-2 border-gray-800">\
+    \
+                    <div class="bg-gray-800 rounded-[2.8rem] overflow-hidden aspect-[9/19.5] relative border border-gray-700">\
+                        \
+                        <img src="https://radikal.cloud/i/IMG-2910.q1Kpop" class="w-full h-full object-cover" alt="App Screen">\
+                        \
+                        <div class="absolute bottom-6 left-3 right-3 bg-[#02AFF5] p-5 rounded-2xl text-white shadow-lg backdrop-blur-sm bg-opacity-95">\
+                            <div class="text-xs text-white/80 font-medium tracking-wide">\uc0\u1053 \u1072 \u1081 \u1076 \u1077 \u1085 \u1086 </div>\
+                            <div class="font-bold text-xl leading-tight mt-1 font-heading">\uc0\u1040 \u1076 \u1072 \u1084 \u1086 \u1074 \u1082 \u1072  -> \u1054 \u1088 \u1077 \u1085 \u1073 \u1091 \u1088 \u1075 </div>\
+                            <div class="flex justify-between mt-3 text-base items-end border-t border-white/20 pt-3">\
+                                <span class="font-medium">2 \uc0\u1084 \u1077 \u1089 \u1090 \u1072 </span>\
+                                <span class="text-white font-black text-2xl tracking-tight">+2000 \uc0\u8381 </span>\
+                            </div>\
+                        </div>\
+                        \
+                    </div>\
+                </div>\
+\
+            </div>\
+        </div>\
+        \
+        <div class="absolute bottom-0 w-full h-2 bg-gradient-to-r from-brand-dark via-brand-accent to-brand-dark"></div>\
+    </div>\
+\
+</body>\
+</html>\
+\
+}
