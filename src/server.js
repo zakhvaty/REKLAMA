@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Welcome to REKLAMA Advertising Platform!');
+  res.sendFile(__dirname + '/../public/index.html');
 });
 
 app.get('/api/ads', (req, res) => {
